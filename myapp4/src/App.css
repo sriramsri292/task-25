@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.a {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.pic {
+  width: 100px;
+  height: auto;
+  margin-right: 40%;
+}
+.b{
+  margin-right: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+.p{
+    
+width: 90%;
+height: 50%;
+margin-top: 30px;
+margin-left: 30px;
+ 
+}
+.aa{
+ display:inline;
+ margin-right: 30px;
+ padding-right: 20px;
+ 
+ color: #282c34;
+}
+.ab{
+  padding-top: 30px;
+}
+/* All.css */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3,2fr); /* Adjust the number of columns as needed */
+  gap: 16px; /* Adjust the gap between grid items */
+  max-width: 90%; /* Adjust the maximum width of the grid */
+  margin: 0 auto; /* Center the grid horizontally */
+  padding: 16px;
+  max-height: 200%;
+  
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+}
+.mypic {
+  height: auto; /* Let the image adjust its height proportionally */
+  width: 100%; /* Make the image width 100% of its parent's width */
+  max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+}
