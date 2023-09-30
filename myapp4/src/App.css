@@ -94,3 +94,12 @@ margin-left: 30px;
   width: 100%; /* Make the image width 100% of its parent's width */
   max-width: 100%; /* Ensure the image doesn't exceed its natural size */
 }
+.bb{
+  width: 50%;
+  height: 20%;
+}
+.k{
+  width: auto;
+  height: auto;
+  background-color: antiquewhite;
+}

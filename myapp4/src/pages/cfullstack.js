@@ -1,9 +1,12 @@
 import React from 'react';
+import {Link}  from "react-router-dom";
+
 
 const Cfullstack = () => {
 
-  const ar = [
+  const arr = [
     {
+      id:1,
       title: "The Top 10 Tools Every Full Stack Developer Should Master in 2023",
       image: "https://www.guvi.in/blog/wp-content/uploads/2023/07/html-css-collage-concept-with-person.jpg",
       content: `
@@ -27,9 +30,11 @@ const Cfullstack = () => {
   
       Make sure to familiarize yourself with the ins and outs of GitHub to streamline your collaboration efforts.
       `,
-    },
+    }];
+    const arr2 = [
+      
     {
-
+      id:2,
       title:" The Ultimate Guide to Real-World Full Stack Development Applications",
       image: " https://www.guvi.in/blog/wp-content/uploads/2023/07/24746653_7002417-1-2048x1365.jpg",
       content:`There is something fascinating about a lone hacker in black hoodies using a single system and their skills to take down big corporations and their crony capitalism. The anecdote of a hacker has cultivated an ethos of individuality, corporate freedom, and distinct craftiness that can’t be denied. Also, the same archetype is visible in a number of pop-cultural references whether the famous TV series- Mr. Robot or real-life adaptations of Snowden and Julian Assange. Despite all the fascination of hacking, and hysteria, the field of cybersecurity is largely misunderstood outside of the realm of the IT ecosystem.
@@ -56,8 +61,11 @@ const Cfullstack = () => {
       Securing Networks with Cisco Firepower 
       And, Implementing Secure Solutions with Virtual Private Networks 
       Completing both CCNP certification exams will earn you a Cisco® Specialist certification so that you will get accredited by an industry leader in the cybersecurity ecosystem.`
-    },
+    }];
+    const arr3 = [
+      
     {
+      id:3,
       title: " How Long Would It Take to Be a Full Stack Developer?",
       image: "https://www.guvi.in/blog/wp-content/uploads/2023/07/person-front-computer-working-html.jpg ",
       content:`Have you ever wondered how much time it would take to become a skilled Full Stack Developer, capable of creating awesome websites and web applications? Whether you’re already familiar with coding or just starting, you might be curious about the learning process and how long it’ll take to reach your goals.
@@ -86,18 +94,20 @@ const Cfullstack = () => {
   ];
 
   
-  
-  
-  
-  
-  
   return (
+    
     <div className='grid-container'>
       
     <div className='grid-item'><img   className='mypic'src='	https://www.guvi.in/blog/wp-content/uploads/2023/07/html-css-collage-concept-with-person.jpg' alt='My'/> 
     <h4>The Top 10 Tools Every Full Stack Developer Should </h4>
     <h4>  Master in 2023 </h4>
     <p style={{fontWeight:'lighter' ,fontStyle:'inherit'}}>As a full stack developer, having the right set of tools is crucial for your</p>
+    <Link to={`/blog?arrParam=${encodeURIComponent(JSON.stringify(arr))}`}>
+  <h3 className='aa'>read more..</h3>
+</Link>
+
+
+
      </div>
 
     <div className='grid-item'><img  className='mypic'src='	https://www.guvi.in/blog/wp-content/uploads/2023/07/24746653_7002417-1-2048x1365.jpg' alt='Mya'/> 
@@ -105,7 +115,9 @@ const Cfullstack = () => {
     <h4>The Ultimate Guide to Real-World  </h4>
     <h4> Full Stack Development Applications</h4>
     <p style={{fontWeight:'lighter' ,fontStyle:'inherit'}}>Full stack development has become increasingly popular in recent years, with companies seeking professionals who</p>
-    
+    <Link to={`/blog?arrParam=${encodeURIComponent(JSON.stringify(arr2))}`}>
+  <h3 className='aa'>read more..</h3>
+</Link>
     
     </div>
     <div className='grid-item'><img  className='mypic'src='https://www.guvi.in/blog/wp-content/uploads/2023/07/person-front-computer-working-html.jpg' alt='Mya'/> 
@@ -113,8 +125,11 @@ const Cfullstack = () => {
     <h4>Best Ways to Learn Full Stack Development in 2023</h4>
     <h4>in 2023</h4>
     <p style={{fontWeight:'lighter' ,fontStyle:'inherit'}}>Full stack development is and will be a promising and an in-demand career in the</p>
+    <Link to={`/blog?arrParam=${encodeURIComponent(JSON.stringify(arr3))}`}>
+  <h3 className='aa'>read more..</h3>
+</Link>
     </div>
-    
+   
     
   </div>
   );

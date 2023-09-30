@@ -1,12 +1,12 @@
-
 import './App.css';
-import {Routes,Route,Link}  from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from './pages/home';
 import Carrier from './pages/carrier';
 import Cybersecurity from './pages/cybersecurity';
 
 import All from './pages/all';
 import Cfullstack from './pages/cfullstack';
+import Blog from './pages/blog'; 
 
 function App() {
   return (
@@ -27,19 +27,23 @@ function App() {
       <Link to="/carrier" > 
       <h3 className='aa'> Carrier</h3>
       </Link>
-      
+     
 
       </div>
 
-      
-
       <Routes>
       
-        <Route path="/" Component={All}/>
-        <Route path="/cfullstack" Component={Cfullstack}/>
-        <Route path="/cybersecurity" Component={Cybersecurity}/>
-        <Route path="/carrier" Component={Carrier}/>
+        <Route path="/" element={<All />} />
+        <Route path="/cfullstack" element={<Cfullstack />} />
+        <Route path="/cybersecurity" element={<Cybersecurity />} />
+        <Route path="/carrier" element={<Carrier />} />
+        <Route path="/blog" element={<Blog />} />
+
+      
+      
+    
       </Routes>
+   
     </div>
   );
 }
